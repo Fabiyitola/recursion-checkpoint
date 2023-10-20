@@ -1,0 +1,16 @@
+ALGORITHM check_palindrome
+VAR
+    text := STRING
+    i := INTEGER
+BEGIN
+    IF(text.length <= 1) THEN
+        write("given string is palindrme")
+    END_IF
+    FOR i FROM 0 TO text.length-1 STEP step DO
+        IF(TEXT[0] != text.legth-1) THEN 
+            write("given string is not palindrome")
+        ELSE
+            RETURN palindrome(text[1, -1])
+        END_IF
+    END_FOR
+END
